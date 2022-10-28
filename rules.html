@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rules</title>
+    <style>
+      @import "background.css";
+      body {
+        font-family: monospace;
+        font-weight: 700;
+        font-size: 40px;
+        padding: 20px;
+        color: #b05ec0;
+      }
+
+      h1 {
+        font-family: serif;
+        font-size: 45px;
+        text-transform: uppercase;
+        text-shadow: 2px 2px gold;
+        color: green;
+      }
+
+      h2 {
+        font-family: fantasy;
+        letter-spacing: 2.5px;
+        font-size: 30px;
+        text-transform: uppercase;
+        /*text-shadow: 2px 2px rgb(0, 255, 85);
+        color: rgb(150, 18, 18);*/
+      }
+
+      .type {
+        color: #0000;
+        background: linear-gradient(-90deg, #00dffc 5px, #0000 0) 10px 0,
+          linear-gradient(#00dffc 0 0) 0 0;
+        background-size: calc(var(--n) * 1ch) 200%;
+        -webkit-background-clip: padding-box, text;
+        background-clip: padding-box, text;
+        background-repeat: no-repeat;
+        animation: b 0.1s infinite steps(1),
+          t calc(var(--n) * 0.1s) steps(var(--n)) forwards;
+      }
+
+      @keyframes t {
+        from {
+          background-size: 0 200%;
+        }
+      }
+      @keyframes b {
+        50% {
+          background-position: 0 -100%, 0 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="light x1"></div>
+    <div class="light x2"></div>
+    <div class="light x3"></div>
+    <div class="light x4"></div>
+    <div class="light x5"></div>
+    <div class="light x6"></div>
+    <div class="light x7"></div>
+    <div class="light x8"></div>
+    <div class="light x9"></div>
+
+    <h1>Rules to play the game....</h1>
+    <hr />
+    <br />
+    <h2>
+      <span class="type" style="--n: 50"> >🧙🏻‍♂️ Click on play games.</span
+      ><br /><br />
+      <span class="type" style="--n: 90"
+        >>🧙🏻‍♂️ You have to find the 3 gifts as soon as you can by clicking the
+        target.</span
+      ><br /><br />
+      <span class="type" style="--n: 95">
+        >🧙🏻‍♂️ If u clicks on the hidden danger then the game will get automaically
+        reset.</span
+      ><br /><br />
+      <span class="type" style="--n: 90">
+        >🧙🏻‍♂️ After winning you can replay the same level or can jump to next
+        level directly.</span
+      ><br />
+    </h2>
+  </body>
+</html>

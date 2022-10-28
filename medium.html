@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medium Level</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <style>
+      
+      @import "background.css";
+
+      
+    body {
+      margin: 10px, 30px;
+      padding: 0%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .parent {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(4, 7.5vw);
+      grid-template-rows: repeat(4, 7vw);
+    }
+
+    .parent>div {
+      padding: 10px;
+      background-color: #49e77e;
+      border-radius: 0.3vw;
+      display: grid;
+      place-items: center;
+      font-family: sans-serif;
+      font-size: 4vw;
+      font-weight: bold;
+    }
+
+    .parent>div>img {
+      width: 4.5vw;
+      display: none;
+    }
+
+    .message-Container {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(255, 255, 255, 0.237);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .message {
+      color: coral;
+      width: 20vw;
+      height: 35vh;
+      background-color: black;
+      font-size: 3vw;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 900;
+      flex-direction: column;
+    }
+
+    @media (max-width:900px) {
+      .parent {
+        display: grid;
+        grid-gap: 18px;
+        grid-template-columns: repeat(4, 12vw);
+        grid-template-rows: repeat(4, 12vw);
+      }
+
+      .parent>div {
+        padding: 2px;
+        background-color: #49e77e;
+        border-radius: 0.3vw;
+        display: grid;
+        place-items: center;
+        font-family: sans-serif;
+        font-size: 8vw;
+        font-weight: bold;
+      }
+
+      .parent>div>img {
+        width: 9vw;
+        display: none;
+      }
+
+      .message {
+        color: coral;
+        width: 40vw;
+        height: 50vh;
+        background-color: black;
+        font-size: 7vw;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 900;
+        flex-direction: column;
+      }
+
+    }
+
+
+
+
+
+
+
+    .btns>span {
+      color: white;
+    }
+
+    .stars>span {
+      clip-path: polygon(50% 0%,
+          61% 35%,
+          98% 35%,
+          68% 57%,
+          79% 91%,
+          50% 70%,
+          21% 91%,
+          32% 57%,
+          2% 35%,
+          39% 35%);
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+    }
+
+    .stars>.fill {
+      background-color: yellow;
+    }
+
+    .stars>.nofill {
+      background-color: rgb(98, 98, 90);
+    }
+
+    #wonmessage,
+    #dangermessage {
+      display: none;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="light x1"></div>
+    <div class="light x2"></div>
+    <div class="light x3"></div>
+    <div class="light x4"></div>
+    <div class="light x5"></div>
+    <div class="light x6"></div>
+    <div class="light x7"></div>
+    <div class="light x8"></div>
+    <div class="light x9"></div>
+
+    <div class="parent">
+      <div>
+        <span>🎯</span>
+        <img src="./gift.png" alt="" />
+      </div>
+      <div>
+        <span>🎯</span>
+        <img src="./cancel.png" alt="" />
+      </div>
+      <div>
+        <span>🎯</span>
+        <img src="./cancel.png" alt="" />
+      </div>
+      <div>
+        <span>🎯</span>
+        <img src="./gift.png" alt="" />
+      </div>
+      <div>
+        <span>🎯</span>
+        <img src="./cancel.png" alt="" />
+      </div>
+      <div>
+        <span>🎯</span>
+        <img src="./gift.png" alt="" />
+      </div>
+      <div>
+        <span>🎯</span>
+        <img src="./cancel.png" alt="" />
+      </div>
+      <div>
+        <span>🎯</span>
+        <img src="./cancel.png" alt="" />
+      </div>
+      <div>
+        <span>🎯</span>
+        <img src="./sign.png" alt="" />
+      </div>
+      <div>
+        <span>🎯</span>
+        <img src="./gift.png" alt="" />
+      </div>
+      <div>
+        <span>🎯</span>
+        <img src="./cancel.png" alt="" />
+      </div>
+      <div>
+        <span>🎯</span>
+        <img src="./gift.png" alt="" />
+      </div>
+      <div>
+        <span>🎯</span>
+        <img src="./gift.png" alt="" />
+      </div>
+      <div>
+        <span>🎯</span>
+        <img src="./cancel.png" alt="" />
+      </div>
+      <div>
+        <span>🎯</span>
+        <img src="./gift.png" alt="" />
+      </div>
+      <div>
+        <span>🎯</span>
+        <img src="./cancel.png" alt="" />
+      </div>
+    </div>
+    <div class="message-Container">
+      <div class="message" id="dangermessage">
+        <span id="messagetext">Oops!☠️</span>
+      </div>
+      <div class="message" id="wonmessage">
+        <div class="stars">
+          <span class="fill"></span>
+          <span class="fill"></span>
+          <span class="nofill"></span>
+        </div>
+        <span id="messagetext">Winner🥇</span>
+        <div class="btns">
+          <span
+            ><a href="./easy.html"
+              ><ion-icon name="arrow-back-outline"></ion-icon name="arrow-back-outline"></a
+          ></span>
+          <span
+            ><a href="./medium.html"
+              ><ion-icon name="refresh-outline"></ion-icon name="refresh-outline"></a
+          ></span>
+          <span
+            ><a href="./hard.html"
+              ><ion-icon name="arrow-forward-outline"></ion-icon name="arrow-forward-outline"></a
+          ></span>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
